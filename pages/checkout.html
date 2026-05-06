@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+     <div class="loading">
+      <div class="nebula"></div>
+      <div class="grid-plane"></div>
+      <div class="stars-container">
+        <div class="star-layer"></div>
+        <div class="star-layer"></div>
+        <div class="star-layer"></div>
+      </div>
+
+      <div class="loader-container">
+        <div class="hologram-platform"></div>
+        <div class="platform-rings">
+          <div class="platform-ring"></div>
+          <div class="platform-ring"></div>
+          <div class="platform-ring"></div>
+        </div>
+
+        <div class="projection-beams">
+          <div class="beam"></div>
+          <div class="beam"></div>
+          <div class="beam"></div>
+          <div class="beam"></div>
+        </div>
+
+        <div class="holo-container">
+          <div class="holo-sphere">
+            <div class="holo-ring"></div>
+            <div class="holo-ring"></div>
+            <div class="holo-ring"></div>
+            <div class="holo-ring"></div>
+            <div class="holo-ring"></div>
+
+            <div class="holo-particles">
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+              <div class="holo-particle"></div>
+            </div>
+          </div>
+
+          <div class="glitch-effect"></div>
+          <div class="lightning"></div>
+        </div>
+
+        <div class="code-lines">
+          <div class="code-line">
+            01001001 01001110 01001001 01010100 01001001 01000001 01001100
+            01001001 01011010 01001001 01001110 01000111
+          </div>
+          <div class="code-line">
+            function initHolographicMatrix() { connectNodes();
+            renderQuantumState(); }
+          </div>
+          <div class="code-line">
+            01010011 01011001 01010011 01010100 01000101 01001101 00100000
+            01001100 01001111 01000001 01000100 01001001 01001110 01000111
+          </div>
+          <div class="code-line">
+            class QuantumProcessor { constructor() { this.entanglement = new
+            Map(); }}
+          </div>
+          <div class="code-line">
+            01010010 01000101 01001110 01000100 01000101 01010010 01001001
+            01001110 01000111 00100000 01001000 01001111 01001100 01001111
+          </div>
+          <div class="code-line">
+            const matrix = [1.2, 0.8, 3.1, 2.7, 5.9, 4.3, 7.2, 9.0];
+          </div>
+          <div class="code-line">
+            01010000 01010010 01001111 01000011 01000101 01010011 01010011
+            01001001 01001110 01000111 00100000 01000100 01000001 01010100
+            01000001
+          </div>
+          <div class="code-line">
+            async function loadHolographicData() { await fetch('/api/quantum');
+            }
+          </div>
+        </div>
+
+        <div class="holo-numbers">
+          <div
+            class="number"
+            style="top: 40%; left: 30%; animation-delay: 0.5s"
+          >
+            0xFF
+          </div>
+          <div
+            class="number"
+            style="top: 50%; left: 60%; animation-delay: 1.5s"
+          >
+            0x0A
+          </div>
+          <div
+            class="number"
+            style="top: 60%; left: 40%; animation-delay: 2.5s"
+          >
+            0xB4
+          </div>
+          <div
+            class="number"
+            style="top: 30%; left: 50%; animation-delay: 3.5s"
+          >
+            0x3D
+          </div>
+          <div
+            class="number"
+            style="top: 70%; left: 20%; animation-delay: 4.5s"
+          >
+            0xC2
+          </div>
+          <div
+            class="number"
+            style="top: 20%; left: 70%; animation-delay: 5.5s"
+          >
+            0x19
+          </div>
+        </div>
+
+        <div class="radial-indicators">
+          <div class="radial-indicator"></div>
+          <div class="radial-indicator"></div>
+          <div class="radial-indicator"></div>
+          <div class="radial-indicator"></div>
+        </div>
+
+        <div class="corner-decorations">
+          <div class="corner"></div>
+          <div class="corner"></div>
+          <div class="corner"></div>
+          <div class="corner"></div>
+        </div>
+
+        <div class="loading-text">SYSTEM IITIALIZATION</div>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+    <header class="bg-[#1B6392] fixed top-0 w-full z-[100000]">
+      <div class="px-[20px] max-w-[1360px] w-full mx-auto">
+        <!-- top -->
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          class="top py-[12px] flex items-center justify-between text-white max-[1040px]:hidden"
+        >
+          <p class="text-[14px] font-[400]">
+            Welcome to Clicon online eCommerce store.
+          </p>
+          <ul class="flex items-center gap-[24px]">
+            <li class="flex gap-[12px]">
+              <p>Follow us:</p>
+              <img src="../images/Twitter.svg" alt="" />
+              <img src="../images/Facebook.svg" alt="" />
+              <img src="../images/Pinterest.svg" alt="" />
+              <img src="../images/Reddit.svg" alt="" />
+              <img src="../images/Youtube.svg" alt="" />
+              <img src="../images/Instagram.svg" alt="" />
+            </li>
+            <img src="./images/Line 1.svg" alt="" />
+            <li class="">
+              <select class="border-0 text-white" name="" id="">
+                <option class="bg-[#1B6392]" value="">ENG</option>
+                <option class="bg-[#1B6392]" value="">RUS</option>
+                <option class="bg-[#1B6392]" value="">UZB</option>
+              </select>
+            </li>
+            <li class="">
+              <select class="border-0 text-white" name="" id="">
+                <option class="bg-[#1B6392]" value="">USD</option>
+                <option class="bg-[#1B6392]" value="">EUR</option>
+                <option class="bg-[#1B6392]" value="">SO'M</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <hr class="text-white max-[1040px]:hidden" />
+        <!-- bottom -->
+        <div
+          class="bottom py-[20px] flex justify-between items-center max-[1040px]:hidden"
+        >
+          <a href="../index.html">
+            <img
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              src="../images/Logo.svg"
+              alt=""
+            />
+          </a>
+          <input
+            data-aos="flip-left"
+            data-aos-duration="2500"
+            placeholder="Search for anything..."
+            class="w-[646px] max-[1040px]:hidden h-[48px] border-0 rounded-[2px]"
+            type="text"
+            name=""
+            id=""
+          />
+          <div
+           
+            class="max-[1040px]:hidden flex gap-[24px]"
+          >
+            <img src="../images/ShoppingCartSimple.svg" alt="" />
+            <img src="../images/Heart.svg" alt="" />
+
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="authentication-modal"
+              data-modal-toggle="authentication-modal"
+              type="button"
+            >
+              <img src="../images/User.svg" alt="" />
+            </button>
+
+            <!-- Main modal -->
+            <div
+              id="authentication-modal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div
+                class="relative p-4 w-full rounded-[20px] border-[2px] border-[#1B6392] max-w-md max-h-full bg-white"
+              >
+                <!-- Modal content -->
+                <div
+                  class="relative bg-neutral-primary-soft rounded-base p-4 md:p-6"
+                >
+                  <!-- Modal header -->
+                  <div class="flex items-center justify-between pb-4 md:pb-5">
+                    <h3 class="text-lg font-medium text-heading">
+                      Sign in to our platform
+                    </h3>
+                    <button
+                      type="button"
+                      class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                      data-modal-hide="authentication-modal"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18 17.94 6M18 18 6.06 6"
+                        />
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <form action="#" class="pt-4 md:pt-6">
+                    <div class="mb-4">
+                      <label
+                        for="email"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Your email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="example@company.com"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="password"
+                        class="block mb-2.5 text-sm font-medium text-heading"
+                        >Your password</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div>
+                    <div class="flex items-start my-6">
+                      <div class="flex items-center">
+                        <input
+                          id="checkbox-remember"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"
+                        />
+                        <label
+                          for="checkbox-remember"
+                          class="ms-2 text-sm font-medium text-heading"
+                          >Remember me</label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="ms-auto text-sm font-medium text-fg-brand hover:underline"
+                        >Lost Password?</a
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="text-[#1B6392] bg-brand box-border border-[1px] border-[] hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none w-full mb-3"
+                    >
+                      Login to your account
+                    </button>
+                    <div class="text-sm font-medium text-body">
+                      Not registered?
+                      <a href="#" class="text-fg-brand hover:underline"
+                        >Create account</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- menyu -->
+        <div class="flex justify-between items-center">
+          <a href="../index.html"
+            ><img
+              class="hidden max-[1040px]:inline-flex"
+              src="../images/Logo.svg"
+              alt=""
+          /></a>
+          <!-- drawer init and show -->
+          <div class="text-center">
+            <button
+              class="hidden rotate-90 font-bold text-[20px] my-[20px] max-[1040px]:inline-flex text-white"
+              type="button"
+              data-drawer-target="drawer-navigation"
+              data-drawer-show="drawer-navigation"
+              aria-controls="drawer-navigation"
+            >
+              |||
+            </button>
+          </div>
+
+          <!-- drawer component -->
+          <div
+            id="drawer-navigation"
+            class="fixed top-0 backdrop-blur-xl left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full w-80 border-e border-default"
+            tabindex="-1"
+            aria-labelledby="drawer-navigation-label"
+          >
+            <div class="border-b border-default pb-4 flex items-center">
+              <a href="../index.html">
+                <img src="../images/Logo.svg" alt="" />
+              </a>
+              <button
+                type="button"
+                data-drawer-hide="drawer-navigation"
+                aria-controls="drawer-navigation"
+                class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                </svg>
+                <span class="sr-only">Close menu</span>
+              </button>
+            </div>
+            <div class="max-w-[248px] w-full py-5 overflow-y-auto">
+              <ul class="space-y-2 font-medium">
+                <li>
+                  <p class="text-[14px] font-[400] px-2">
+                    Welcome to Clicon online eCommerce store.
+                  </p>
+                </li>
+                <li class="">
+                  <select class="border-0" name="" id="">
+                    <option value="">ENG</option>
+                    <option value="">RUS</option>
+                    <option value="">UZB</option>
+                  </select>
+                </li>
+                <li class="">
+                  <select class="border-0" name="" id="">
+                    <option value="">USD</option>
+                    <option value="">EUR</option>
+                    <option value="">SO'M</option>
+                  </select>
+                </li>
+                <input
+                  placeholder="Search for anything..."
+                  class="border-2 rounded-[2px]"
+                  type="text"
+                  name=""
+                  id=""
+                />
+
+                <a href="./track-order.html">
+                  <button class="flex gap-[6px]">
+                    <img src="./images/MapPinLine.svg" alt="" />
+                    <p>Track Order</p>
+                  </button>
+                </a>
+                <a href="./compare.html">
+                  <button class="flex gap-[6px]">
+                    <img src="./images/ArrowsCounterClockwise.svg" alt="" />
+                    <p>Compare</p>
+                  </button>
+                </a>
+                <a href="./custumer-support.html">
+                  <button class="flex gap-[6px]">
+                    <img src="./images/Headphones.svg" alt="" />
+                    <p>Customer Support</p>
+                  </button>
+                </a>
+                <a href="./ned-help.html">
+                  <button class="flex gap-[6px]">
+                    <img src="./images/Info.svg" alt="" />
+                    <p>Need Help</p>
+                  </button>
+                </a>
+                <h2 class="flex gap-[8px]">
+                  <img src="./images/PhoneCall.svg" alt="" />
+                  <span class="text-[18px]">+1-202-555-0104</span>
+                </h2>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--header-fotter -->
+      <div class="bg-white max-[1040px]:hidden">
+        <div
+          class="max-w-[1360px] px-[20px] py-[26px] flex justify-between items-center w-full mx-auto"
+        >
+          <div class="flex items-center gap-[24px]">
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="bg-[#F2F4F5]"
+            >
+              <select class="border-0" name="" id="">
+                <option>All Category</option>
+                <option>Computer & Laptop</option>
+                <option>Computer Accessories</option>
+                <option>SmartPhone</option>
+                <option>Headphone</option>
+                <option>Mobile Accessories</option>
+                <option>Gaming Console</option>
+                <option>Camera & Photo</option>
+                <option>TV & Homes Appliances</option>
+                <option>Watchs & Accessories</option>
+                <option>GPS & Navigation</option>
+                <option>Warable Technology</option>
+              </select>
+            </button>
+            <a href="./track-order.html">
+              <button
+                data-aos="flip-up"
+                data-aos-duration="2700"
+                class="flex gap-[6px]"
+              >
+                <img src="../images/MapPinLine.svg" alt="" />
+                <p class="text-[#5F6C72]">Track Order</p>
+              </button>
+            </a>
+            <a href="./compare.html">
+              <button
+                data-aos="flip-up"
+                data-aos-duration="2700"
+                class="flex gap-[6px]"
+              >
+                <img src="../images/ArrowsCounterClockwise.svg" alt="" />
+                <p class="text-[#5F6C72]">Compare</p>
+              </button>
+            </a>
+            <a href="./custumer-support.html">
+              <button
+                data-aos="flip-up"
+                data-aos-duration="2700"
+                class="flex gap-[6px]"
+              >
+                <img src="../images/Headphones.svg" alt="" />
+                <p class="text-[#5F6C72]">Customer Support</p>
+              </button>
+            </a>
+            <a href="./ned-help.html">
+              <button
+                data-aos="flip-up"
+                data-aos-duration="2700"
+                class="flex gap-[6px] text-[#FA8232]"
+              >
+                <img src="../images/Info.svg" alt="" />
+                <p class="text-[#5F6C72]">Need Help</p>
+              </button>
+            </a>
+          </div>
+
+          <h2
+            data-aos="fade-left"
+            data-aos-duration="2500"
+            class="flex gap-[8px]"
+          >
+            <img src="../images/PhoneCall.svg" alt="" />
+            <span class="text-[18px]">+1-202-555-0104</span>
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        data-aos="fade-right"
+        data-aos-duration="2500"
+        class="pt-[246px] bg-[#F2F4F5] max-[1040px]:pt-[66px]"
+      >
+        <div
+          class="px-[20px] max-w-[1360px] w-full mx-auto py-[26px] flex items-center gap-[8px]"
+        >
+          <img src="../images/Vector.svg" alt="" />
+          <a href="../index.html"><p class="text-[#5F6C72]">Home</p></a>
+          <p class="text-[#5F6C72]">></p>
+          <a href="./shop-page.html"><p class="text-[#5F6C72]">Shop-Page</p></a>
+          <p class="text-[#5F6C72]">></p>
+          <a href="./produkt-details.html">
+            <p class="text-[#5F6C72]">Produkt-details</p>
+          </a>
+          <p class="text-[#5F6C72]">></p>
+          <a href="./shoping-card.html">
+            <p class="text-[#5F6C72]">Shopping Card</p>
+          </a>
+          <p class="text-[#5F6C72]">></p>
+          <p class="text-[#2DA5F3]">Checkout</p>
+        </div>
+      </section>
+      <section
+        class="px-[20px] max-w-[1360px] w-full mx-auto py-[72px] flex gap-[24px]"
+      >
+        <!-- left -->
+        <div class="w-[872px]">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            class="text-[18px] font-[500]"
+          >
+            Billing Information
+          </h2>
+          <form class="pt-[24px] flex gap-[16px]">
+            <label class="">
+              <p data-aos="fade-right" data-aos-duration="2500" class="">
+                User name
+              </p>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="flex gap-[16px] pt-[8px]"
+              >
+                <input
+                  type="text"
+                  class="border-[1px] border-[#E4E7E9] w-[206px] h-[44px] rounded-[2px]"
+                  placeholder="First name"
+                />
+                <input
+                  type="text"
+                  class="border-[1px] border-[#E4E7E9] w-[206px] h-[44px] rounded-[2px]"
+                  placeholder="Last name"
+                />
+              </div>
+            </label>
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-right" data-aos-duration="2500" class="">
+                Company Name <span class="">(Optional)</span>
+              </p>
+              <input
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                type="text"
+                class="w-[428px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+              />
+            </label>
+          </form>
+          <label class="flex flex-col gap-[8px] pt-[16px]">
+            <p data-aos="fade-right" data-aos-duration="2500" class="">
+              Address
+            </p>
+            <input
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              type="text"
+              class="border-[1px] border-[#E4E7E9] rounde-[2px] w-[872px] h-[44px]"
+            />
+          </label>
+          <div class="grid grid-cols-4 gap-[16px] pt-[16px]">
+            <!-- c-1 -->
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-right" data-aos-duration="2500" class="">Country</p>
+              <select
+              data-aos="fade-right" data-aos-duration="2500"
+                class="w-[206px] border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5]"
+              >
+                <option value="">O‘zbekiston</option>
+                <option value="">Amerika Qo‘shma Shtatlari</option>
+                <option value="">Rossiya</option>
+                <option value="">Xitoy</option>
+                <option value="">Germaniya</option>
+                <option value="">Yaponiya</option>
+                <option value="">Braziliya</option>
+                <option value="">Fransiya</option>
+                <option value="">Kanada</option>
+                <option value="">Hindiston</option>
+              </select>
+            </label>
+            <!-- c-2 -->
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-right" data-aos-duration="2500" class="">Region/State</p>
+              <select
+              data-aos="fade-right" data-aos-duration="2500"
+                class="w-[206px] border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5]"
+              >
+                <option value="">Toshkent viloyati</option>
+                <option value="">Samarqand viloyati</option>
+                <option value="">Buxoro viloyati</option>
+                <option value="">Xorazm viloyati</option>
+                <option value="">Farg‘ona viloyati</option>
+                <option value="">Andijon viloyati</option>
+                <option value="">Namangan viloyati</option>
+                <option value="">Qashqadaryo viloyati</option>
+                <option value="">Surxondaryo viloyati</option>
+                <option value="">Jizzax viloyati</option>
+              </select>
+            </label>
+            <!-- c-3 -->
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-left" data-aos-duration="2500" class="">City</p>
+              <select
+              data-aos="fade-left" data-aos-duration="2500"
+                class="w-[206px] border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5]"
+              >
+                <option value="">Toshkent shahri</option>
+                <option value="">Samarqand shahri</option>
+                <option value="">Buxoro shahri</option>
+                <option value="">Xiva shahri</option>
+                <option value="">Termiz shahri</option>
+                <option value="">Andijon shahri</option>
+                <option value="">Namangan shahri</option>
+                <option value="">Qarshi shahri</option>
+                <option value="">Farg‘ona shahri</option>
+                <option value="">Nukus shahri</option>
+              </select>
+            </label>
+            <!-- c-4 -->
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-left" data-aos-duration="2500" class="">Zip Code</p>
+              <input
+              data-aos="fade-left" data-aos-duration="2500"
+                type="text"
+                class="border-[1px] border-[#E4E7E9] rounded-[2px] w-[206px] h-[44px]"
+              />
+            </label>
+            <!-- ... -->
+          </div>
+          <div class="pt-[16px] flex gap-[16px]">
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-right" data-aos-duration="2500" class="">Email</p>
+              <input
+              data-aos="fade-right" data-aos-duration="2500"
+                type="email"
+                class="border-[1px] border-[#E4E7E9] w-[428px] h-[44px] rounded-[2px]"
+              />
+            </label>
+            <label class="flex flex-col gap-[8px]">
+              <p data-aos="fade-left" data-aos-duration="2500" class="">Phone Number</p>
+              <input
+              data-aos="fade-left" data-aos-duration="2500"
+                type="tel"
+                class="border-[1px] border-[#E4E7E9] w-[428px] h-[44px] rounded-[2px]"
+                placeholder="+998977777777"
+              />
+            </label>
+          </div>
+          <label
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            class="flex gap-[12px] items-center pt-[24px]"
+          >
+            <input
+              type="checkbox"
+              class="border-[1px] border-[#C9CFD2] w-[20px] h-[20px] text-[#1B6392] rounded-[2px]"
+            />
+            <p class="text-[#475156]">Ship into different address</p>
+          </label>
+          <div
+            class="border-[#E4E7E9] border-[1px] w-[872px] h-[520px] rounded-[4px] mt-[40px] overflow-hidden"
+          >
+            <h2
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="text-[18px] font-[500] pl-[32px] py-[20px]"
+            >
+              Payment Option
+            </h2>
+            <hr
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="text-[#E4E7E9]"
+            />
+            <div
+              class="py-[24px] overflow-hidden px-[24px] flex justify-between items-center"
+            >
+              <!-- c-1 -->
+              <div
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="flex justify-center items-center flex-col"
+              >
+                <img src="../images/CurrencyDollar.svg" alt="" class="" />
+                <p class="font-[500] text-center pt-[8px] pb-[16px]">
+                  Cash on Delivery
+                </p>
+                <input type="radio" class="text-[#FA8232]" name="radio" />
+              </div>
+              <!-- hr -->
+              <div data-aos="fade-up" data-aos-duration="2500" class="">
+                <img src="../images/Line 28.svg" alt="" />
+              </div>
+              <!-- c-2 -->
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="flex justify-center items-center flex-col"
+              >
+                <img src="../images/Icon 77.svg" alt="" class="" />
+                <p class="font-[500] text-center pt-[8px] pb-[16px]">Venmo</p>
+                <input type="radio" class="text-[#FA8232]" name="radio" />
+              </div>
+              <!-- hr -->
+              <div data-aos="fade-up" data-aos-duration="2500" class="">
+                <img src="../images/Line 28.svg" alt="" />
+              </div>
+              <!-- c-3 -->
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="flex justify-center items-center flex-col"
+              >
+                <img src="../images/image 99.svg" alt="" class="" />
+                <p class="font-[500] text-center pt-[8px] pb-[16px]">Paypal</p>
+                <input type="radio" class="text-[#FA8232]" name="radio" />
+              </div>
+              <!-- hr -->
+              <div data-aos="fade-up" data-aos-duration="2500" class="">
+                <img src="../images/Line 28.svg" alt="" />
+              </div>
+              <!-- c-4 -->
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                class="flex justify-center items-center flex-col"
+              >
+                <img src="../images/amazon-icon-1 1.svg" alt="" class="" />
+                <p class="font-[500] text-center pt-[8px] pb-[16px]">
+                  Amazon Pay
+                </p>
+                <input type="radio" class="text-[#FA8232]" name="radio" />
+              </div>
+              <!-- hr -->
+              <div data-aos="fade-up" data-aos-duration="2500" class="">
+                <img src="../images/Line 28.svg" alt="" />
+              </div>
+              <!-- c-5 -->
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="flex justify-center items-center flex-col"
+              >
+                <img src="../images/CreditCard4.svg" alt="" class="" />
+                <p class="font-[500] text-center pt-[8px] pb-[16px]">
+                  Debid/Credit Card
+                </p>
+                <input type="radio" class="text-[#FA8232]" name="radio" />
+              </div>
+
+              <!-- ... -->
+            </div>
+            <hr
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="text-[#E4E7E9]"
+            />
+            <form class="flex flex-col gap-[16px] px-[32px] py-[32px]">
+              <label class="flex flex-col gap-[8px]">
+                <p data-aos="fade-right" data-aos-duration="2500" class="">
+                  Name on Card
+                </p>
+                <input
+                  data-aos="fade-right"
+                  data-aos-duration="2500"
+                  type="text"
+                  class="w-[808px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                />
+              </label>
+              <label class="flex flex-col gap-[8px]">
+                <p data-aos="fade-right" data-aos-duration="2500" class="">
+                  Card Number
+                </p>
+                <input
+                  data-aos="fade-right"
+                  data-aos-duration="2500"
+                  type="text"
+                  class="w-[808px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                />
+              </label>
+              <div class="flex gap-[16px]">
+                <label class="flex flex-col gap-[8px]">
+                  <p data-aos="fade-right" data-aos-duration="2500" class="">
+                    Expire Date
+                  </p>
+                  <input
+                    data-aos="fade-right"
+                    data-aos-duration="2500"
+                    type="date"
+                    class="w-[396px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                  />
+                </label>
+                <label class="flex flex-col gap-[8px]">
+                  <p data-aos="fade-right" data-aos-duration="2500" class="">
+                    CVC
+                  </p>
+                  <input
+                    data-aos="fade-right"
+                    data-aos-duration="2500"
+                    type="text"
+                    class="w-[396px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                  />
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- right -->
+        <div
+        
+          class="border-[1px] overflow-hidden rounded-[4px] w-[424px] h-[450px] border-[#E4E7E9] px-[24px]"
+        >
+          <h2 data-aos="fade-right" data-aos-duration="2500" class="py-[20px] text-[18px] font-[500]">Order Summery</h2>
+          <div  class="flex items-center gap-[16px]">
+            <img data-aos="fade-right" data-aos-duration="2500" src="../images/06.svg" alt="" class="w-[64px] h-[64px]" />
+            <p data-aos="fade-right" data-aos-duration="2500" class="flex flex-col">
+              <span class="">4K UHD LED Smart TV with... </span>
+              <span class="text-[#2DA5F3]">
+                <span class="text-[#5F6C72]">1x</span>
+                $1699
+              </span>
+            </p>
+          </div>
+
+          <p class="flex justify-between items-center pt-[24px]">
+            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Sub-total</span>
+            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">$1699</span>
+          </p>
+          <p class="flex justify-between items-center pt-[12px]">
+            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Shipping</span>
+            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">Free</span>
+          </p>
+          <p class="flex justify-between items-center pt-[12px]">
+            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Discount</span>
+            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">$24</span>
+          </p>
+          <p class="flex justify-between items-center pt-[12px] pb-[16px]">
+            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Tax</span>
+            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">$61.99</span>
+          </p>
+          <hr  data-aos="fade-right" data-aos-duration="2500" class="text-[#E4E7E9]" />
+          <p class="pt-[16px] flex justify-between items-center">
+            <span data-aos="fade-right" data-aos-duration="2500" class="text-[16px] font-[400]">Total</span>
+            <span data-aos="fade-left" data-aos-duration="2500" class="text-[16px] font-[600]">1,784.99</span>
+          </p>
+          <a href="./succes.html">
+            <button
+            data-aos="fade-right" data-aos-duration="2500"
+              class="w-[376px] h-[56px] bg-[#FA8232] text-white font-[700] text-[16px] mt-[24px]"
+            >
+              Place order ->
+            </button>
+          </a>
+        </div>
+        <!-- ......... -->
+      </section>
+    </main>
+    <footer class="bg-[#191C1F] h-100%">
+      <!-- top -->
+      <div
+        class="px-[20px] max-w-[1360px] w-full mx-auto grid grid-cols-5 gap-[24px] py-[72px] max-[1086px]:grid-cols-4 max-[760px]:grid-cols-3 max-[580px]:grid-cols-2 max-[392px]:grid-cols-1"
+      >
+        <!-- c-1 -->
+        <div data-aos="fade-up" data-aos-duration="2500" class="">
+          <img src="../images/Logo (1).svg" alt="" />
+          <p class="flex flex-col text-[#77878F] pt-[24px]">
+            Customer Supports:
+            <span class="text-white text-[18px] font-[500]"
+              >(629) 555-0129</span
+            >
+          </p>
+          <p class="text-[#ADB7BC] pt-[12px]">
+            4517 Washington Ave. <br />
+            Manchester, Kentucky 39495
+          </p>
+          <p class="text-white pt-[12px]">info@kinbo.com</p>
+        </div>
+        <!-- c-2 -->
+        <div data-aos="fade-up" data-aos-duration="2500" class="">
+          <ul class="">
+            <li class="text-white font-[500] text-[16px]">Top Category</li>
+            <li class="pt-[12px] text-[#929FA5]">Computer & Laptop</li>
+            <li class="pt-[12px] text-[#929FA5]">SmartPhone</li>
+            <li class="pt-[12px] text-[#929FA5]">Headphone</li>
+            <li class="pt-[12px] flex gap-[8px] text-white items-center">
+              <span class=""><img src="./images/Devider.svg" alt="" /></span
+              >Accessories
+            </li>
+            <li class="pt-[12px] text-[#929FA5]">Camera & Photo</li>
+            <li class="pt-[12px] text-[#929FA5]">TV & Homes</li>
+            <li class="pt-[12px] text-[#EBC80C]">Browse All Product -></li>
+          </ul>
+        </div>
+        <!-- c-3 -->
+        <div data-aos="fade-up" data-aos-duration="2500" class="">
+          <ul class="">
+            <li class="text-white font-[500] text-[16px]">Quick links</li>
+            <li class="pt-[12px] text-[#929FA5]">Shop Product</li>
+            <li class="pt-[12px] text-[#929FA5]">Shoping Cart</li>
+            <li class="pt-[12px] text-[#929FA5]">Wishlist</li>
+            <li class="pt-[12px] text-[#929FA5]">Compare</li>
+            <li class="pt-[12px] text-[#929FA5]">Track Order</li>
+            <li class="pt-[12px] text-[#929FA5]">Customer Help</li>
+            <li class="pt-[12px] text-[#929FA5]">About Us</li>
+          </ul>
+        </div>
+        <!-- c-4 -->
+        <div data-aos="fade-up" data-aos-duration="2500" class="">
+          <p class="text-white text-[16px] font-[500]">Download APp</p>
+          <button
+            class="bg-[#303639] w-[176px] mt-[18px] px-[20px] py-[18.5px] flex items-center gap-[16px]"
+          >
+            <img src="../images/gogle play.svg" alt="" />
+            <p class="flex flex-col text-white">
+              Get it now
+              <span class="">Google Play</span>
+            </p>
+          </button>
+          <button
+            class="bg-[#303639] w-[176px] mt-[18px] px-[22.67px] py-[18.5px] flex items-center gap-[16px]"
+          >
+            <img src="../images/App Store.svg" alt="" />
+            <p class="flex flex-col text-white">
+              Get it now
+              <span class="">App Store</span>
+            </p>
+          </button>
+        </div>
+        <!-- c-5 -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="max-[580px]:hidden"
+        >
+          <p class="text-white text-[16px] font-[500]">Popular Tag</p>
+          <div class="pt-[18px] w-[312px] h-[152px]">
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Game
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              iPhone
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              TV
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+            >
+              Asus Laptops
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Macbook
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              SSD
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+            >
+              Graphics Card
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Power Bank
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+            >
+              Smart TV
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Speaker
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Tablet
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Microwave
+            </button>
+            <button
+              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+            >
+              Samsung
+            </button>
+          </div>
+        </div>
+        <!-- .. -->
+      </div>
+      <hr class="text-[#191C1F]" />
+      <!-- bottom -->
+      <p class="text-[#ADB7BC] py-[24px] text-center">
+        Kinbo - eCommerce Template © 2021. Design by Templatecookie
+      </p>
+    </footer>
+    <!-- <script src="https://cdn.jotfor.ms/agent/embedjs/019dbee35ada74008c45343adab1b35d0eb0/embed.js?isVoice=1"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
