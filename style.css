@@ -1,7 +1,7 @@
-
 .owl-nav {
   display: none;
 }
+
 .item {
   text-align: center;
 }
@@ -1423,6 +1423,6 @@
     border-color: rgba(255, 0, 222, 0.5);
   }
 }
-::placeholder{
-  color: #77878F;
+::placeholder {
+  color: #77878f;
 }
