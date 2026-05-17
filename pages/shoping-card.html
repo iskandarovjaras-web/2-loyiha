@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- <div class="loading">
+     <div class="loading">
       <div class="nebula"></div>
       <div class="grid-plane"></div>
       <div class="stars-container">
@@ -158,7 +158,7 @@
           <div class="progress-bar"></div>
         </div>
       </div>
-    </div> -->
+    </div>
     <header class="bg-[#1B6392] fixed top-0 w-full z-[100000]">
       <div class="px-[20px] max-w-[1360px] w-full mx-auto">
         <!-- top -->
@@ -621,7 +621,11 @@
               <del class="text-[#929FA5] text-[14px] font-[400]">$1999.00</del>
               <span class="">$1699</span>
             </p>
-            <img src="../images/Quantity.svg" alt="" class="pl-[44px]" />
+            <div class="card-btn border-[2px] border-[#E4E7E9] rounded-[3px] w-[148px] h-[48px] flex items-center justify-center gap-[37.5px] ml-[44px]">
+                <button class="minus  text-[30px] cursor-pointer">-</button>
+                <span class="soni text-[20px]">1</span>
+                <button class="plus text-[20px] cursor-pointer">+</button>
+            </div>
             <p class="pl-[24px]">$1699</p>
           </div>
           <div
@@ -938,5 +942,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
