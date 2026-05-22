@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-     <div class="loading">
+    <!-- <div class="loading">
       <div class="nebula"></div>
       <div class="grid-plane"></div>
       <div class="stars-container">
@@ -158,7 +158,7 @@
           <div class="progress-bar"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <header class="bg-[#1B6392] fixed top-0 w-full z-[100000]">
       <div class="px-[20px] max-w-[1360px] w-full mx-auto">
         <!-- top -->
@@ -219,10 +219,7 @@
             name=""
             id=""
           />
-          <div
-           
-            class="max-[1040px]:hidden flex gap-[24px]"
-          >
+          <div class="max-[1040px]:hidden flex gap-[24px]">
             <img src="../images/ShoppingCartSimple.svg" alt="" />
             <img src="../images/Heart.svg" alt="" />
 
@@ -406,7 +403,7 @@
                 <span class="sr-only">Close menu</span>
               </button>
             </div>
-            <div class="max-w-[248px] w-full py-5 overflow-y-auto ">
+            <div class="max-w-[248px] w-full py-5 overflow-y-auto">
               <ul class="space-y-2 font-medium flex flex-col gap-[10px]">
                 <li>
                   <p class="text-[14px] font-[400] px-2">
@@ -552,32 +549,54 @@
       <section
         data-aos="fade-right"
         data-aos-duration="2500"
-        class="pt-[246px] bg-[#F2F4F5] max-[1040px]:pt-[66px]"
+        class="pt-[120px] md:pt-[180px] lg:pt-[246px] bg-[#F2F4F5]"
       >
         <div
-          class="px-[20px] max-w-[1360px] w-full mx-auto py-[26px] flex items-center gap-[8px]"
+          class="px-[20px] max-w-[1360px] w-full mx-auto py-[16px] md:py-[26px] flex flex-wrap items-center gap-x-[8px] gap-y-[4px] text-sm md:text-base overflow-x-auto no-scrollbar whitespace-nowrap"
         >
-          <img src="../images/Vector.svg" alt="" />
-          <a href="../index.html"><p class="text-[#5F6C72]">Home</p></a>
-          <p class="text-[#5F6C72]">></p>
-          <a href="./shop-page.html"><p class="text-[#5F6C72]">Shop-Page</p></a>
-          <p class="text-[#5F6C72]">></p>
-          <a href="./produkt-details.html">
+          <!-- Uycha ikonkani telefonda ham, kompyuterda ham chiroyli turishi uchun o'lcham berildi -->
+          <img
+            src="../images/Vector.svg"
+            alt="Home"
+            class="w-[16px] h-[16px] shrink-0"
+          />
+
+          <a href="../index.html" class="hover:text-[#2DA5F3] transition-colors"
+            ><p class="text-[#5F6C72]">Home</p></a
+          >
+          <p class="text-[#929FA5] shrink-0">&gt;</p>
+
+          <a
+            href="./shop-page.html"
+            class="hover:text-[#2DA5F3] transition-colors"
+            ><p class="text-[#5F6C72]">Shop-Page</p></a
+          >
+          <p class="text-[#929FA5] shrink-0">&gt;</p>
+
+          <a
+            href="./produkt-details.html"
+            class="hover:text-[#2DA5F3] transition-colors"
+          >
             <p class="text-[#5F6C72]">Produkt-details</p>
           </a>
-          <p class="text-[#5F6C72]">></p>
-          <a href="./shoping-card.html">
+          <p class="text-[#929FA5] shrink-0">&gt;</p>
+
+          <a
+            href="./shoping-card.html"
+            class="hover:text-[#2DA5F3] transition-colors"
+          >
             <p class="text-[#5F6C72]">Shopping Card</p>
           </a>
-          <p class="text-[#5F6C72]">></p>
-          <p class="text-[#2DA5F3]">Checkout</p>
+          <p class="text-[#929FA5] shrink-0">&gt;</p>
+
+          <p class="text-[#2DA5F3] font-medium shrink-0">Checkout</p>
         </div>
       </section>
       <section
-        class="px-[20px] max-w-[1360px] w-full mx-auto py-[72px] flex gap-[24px]"
+        class="px-[20px] max-w-[1360px] w-full mx-auto py-[40px] md:py-[72px] flex flex-col lg:flex-row gap-[24px]"
       >
-        <!-- left -->
-        <div class="w-[872px]">
+        <!-- left: Billing Information & Payment (Katta ekranlarda asosiy joyni oladi, telefonda to'liq kenglik) -->
+        <div class="flex-1 w-full overflow-hidden">
           <h2
             data-aos="fade-right"
             data-aos-duration="2500"
@@ -585,157 +604,209 @@
           >
             Billing Information
           </h2>
-          <form class="pt-[24px] flex gap-[16px]">
-            <label class="">
-              <p data-aos="fade-right" data-aos-duration="2500" class="">
+
+          <!-- Form qismi: Telefonda hamma narsa ustma-ust tushadi, planshetdan boshlab yonma-yon bo'ladi -->
+          <form class="pt-[24px] flex flex-col md:flex-row gap-[16px]">
+            <label class="w-full md:w-auto flex-1">
+              <p
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700 mb-2"
+              >
                 User name
               </p>
               <div
                 data-aos="fade-right"
                 data-aos-duration="2500"
-                class="flex gap-[16px] pt-[8px]"
+                class="flex flex-col sm:flex-row gap-[16px]"
               >
                 <input
                   type="text"
-                  class="border-[1px] border-[#E4E7E9] w-[206px] h-[44px] rounded-[2px]"
+                  class="border-[1px] border-[#E4E7E9] w-full sm:w-1/2 lg:w-[206px] h-[44px] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                   placeholder="First name"
                 />
                 <input
                   type="text"
-                  class="border-[1px] border-[#E4E7E9] w-[206px] h-[44px] rounded-[2px]"
+                  class="border-[1px] border-[#E4E7E9] w-full sm:w-1/2 lg:w-[206px] h-[44px] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                   placeholder="Last name"
                 />
               </div>
             </label>
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-right" data-aos-duration="2500" class="">
-                Company Name <span class="">(Optional)</span>
+
+            <label class="w-full md:w-auto flex-1 flex flex-col justify-end">
+              <p
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700 mb-2"
+              >
+                Company Name
+                <span class="text-gray-400 text-xs">(Optional)</span>
               </p>
               <input
                 data-aos="fade-right"
                 data-aos-duration="2500"
                 type="text"
-                class="w-[428px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                class="w-full lg:w-[428px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
               />
             </label>
           </form>
+
+          <!-- Address inputi to'liq eniga moslashadi -->
           <label class="flex flex-col gap-[8px] pt-[16px]">
-            <p data-aos="fade-right" data-aos-duration="2500" class="">
+            <p
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="text-sm font-medium text-gray-700"
+            >
               Address
             </p>
             <input
               data-aos="fade-right"
               data-aos-duration="2500"
               type="text"
-              class="border-[1px] border-[#E4E7E9] rounde-[2px] w-[872px] h-[44px]"
+              class="border-[1px] border-[#E4E7E9] rounded-[2px] w-full h-[44px] px-3 focus:outline-none focus:border-orange-500"
             />
           </label>
-          <div class="grid grid-cols-4 gap-[16px] pt-[16px]">
+
+          <!-- Region/City Grid qismi: Telefonda 1 ta, kichik planshetda 2 ta, noutbukda 4 ta ustun -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[16px] pt-[16px]"
+          >
             <!-- c-1 -->
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-right" data-aos-duration="2500" class="">Country</p>
+            <label class="flex flex-col gap-[8px] w-full">
+              <p
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700"
+              >
+                Country
+              </p>
               <select
-              data-aos="fade-right" data-aos-duration="2500"
-                class="w-[206px] border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5]"
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="w-full border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5] px-2 bg-white"
               >
                 <option value="">O‘zbekiston</option>
                 <option value="">Amerika Qo‘shma Shtatlari</option>
                 <option value="">Rossiya</option>
                 <option value="">Xitoy</option>
                 <option value="">Germaniya</option>
-                <option value="">Yaponiya</option>
-                <option value="">Braziliya</option>
-                <option value="">Fransiya</option>
-                <option value="">Kanada</option>
-                <option value="">Hindiston</option>
               </select>
             </label>
             <!-- c-2 -->
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-right" data-aos-duration="2500" class="">Region/State</p>
+            <label class="flex flex-col gap-[8px] w-full">
+              <p
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700"
+              >
+                Region/State
+              </p>
               <select
-              data-aos="fade-right" data-aos-duration="2500"
-                class="w-[206px] border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5]"
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="w-full border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5] px-2 bg-white"
               >
                 <option value="">Toshkent viloyati</option>
                 <option value="">Samarqand viloyati</option>
                 <option value="">Buxoro viloyati</option>
-                <option value="">Xorazm viloyati</option>
-                <option value="">Farg‘ona viloyati</option>
-                <option value="">Andijon viloyati</option>
-                <option value="">Namangan viloyati</option>
-                <option value="">Qashqadaryo viloyati</option>
-                <option value="">Surxondaryo viloyati</option>
-                <option value="">Jizzax viloyati</option>
               </select>
             </label>
             <!-- c-3 -->
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-left" data-aos-duration="2500" class="">City</p>
+            <label class="flex flex-col gap-[8px] w-full">
+              <p
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700"
+              >
+                City
+              </p>
               <select
-              data-aos="fade-left" data-aos-duration="2500"
-                class="w-[206px] border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5]"
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="w-full border-[1px] border-[#E4E7E9] rounded-[2px] h-[44px] text-[#929FA5] px-2 bg-white"
               >
                 <option value="">Toshkent shahri</option>
                 <option value="">Samarqand shahri</option>
                 <option value="">Buxoro shahri</option>
-                <option value="">Xiva shahri</option>
-                <option value="">Termiz shahri</option>
-                <option value="">Andijon shahri</option>
-                <option value="">Namangan shahri</option>
-                <option value="">Qarshi shahri</option>
-                <option value="">Farg‘ona shahri</option>
-                <option value="">Nukus shahri</option>
               </select>
             </label>
             <!-- c-4 -->
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-left" data-aos-duration="2500" class="">Zip Code</p>
+            <label class="flex flex-col gap-[8px] w-full">
+              <p
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700"
+              >
+                Zip Code
+              </p>
               <input
-              data-aos="fade-left" data-aos-duration="2500"
+                data-aos="fade-left"
+                data-aos-duration="2500"
                 type="text"
-                class="border-[1px] border-[#E4E7E9] rounded-[2px] w-[206px] h-[44px]"
+                class="border-[1px] border-[#E4E7E9] rounded-[2px] w-full h-[44px] px-3 focus:outline-none focus:border-orange-500"
               />
             </label>
-            <!-- ... -->
           </div>
-          <div class="pt-[16px] flex gap-[16px]">
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-right" data-aos-duration="2500" class="">Email</p>
+
+          <!-- Email va Telefon: Telefonda ustma-ust, planshetda yonma-yon -->
+          <div class="pt-[16px] flex flex-col sm:flex-row gap-[16px]">
+            <label class="flex flex-col gap-[8px] w-full sm:w-1/2">
+              <p
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700"
+              >
+                Email
+              </p>
               <input
-              data-aos="fade-right" data-aos-duration="2500"
+                data-aos="fade-right"
+                data-aos-duration="2500"
                 type="email"
-                class="border-[1px] border-[#E4E7E9] w-[428px] h-[44px] rounded-[2px]"
+                class="border-[1px] border-[#E4E7E9] w-full h-[44px] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
               />
             </label>
-            <label class="flex flex-col gap-[8px]">
-              <p data-aos="fade-left" data-aos-duration="2500" class="">Phone Number</p>
+            <label class="flex flex-col gap-[8px] w-full sm:w-1/2">
+              <p
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="text-sm font-medium text-gray-700"
+              >
+                Phone Number
+              </p>
               <input
-              data-aos="fade-left" data-aos-duration="2500"
+                data-aos="fade-left"
+                data-aos-duration="2500"
                 type="tel"
-                class="border-[1px] border-[#E4E7E9] w-[428px] h-[44px] rounded-[2px]"
+                class="border-[1px] border-[#E4E7E9] w-full h-[44px] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                 placeholder="+998977777777"
               />
             </label>
           </div>
+
+          <!-- Checkbox -->
           <label
             data-aos="fade-right"
             data-aos-duration="2500"
-            class="flex gap-[12px] items-center pt-[24px]"
+            class="flex gap-[12px] items-center pt-[24px] cursor-pointer selection:bg-transparent"
           >
             <input
               type="checkbox"
               class="border-[1px] border-[#C9CFD2] w-[20px] h-[20px] text-[#1B6392] rounded-[2px]"
             />
-            <p class="text-[#475156]">Ship into different address</p>
+            <p class="text-[#475156] text-sm selection:bg-transparent">
+              Ship into different address
+            </p>
           </label>
+
+          <!-- Payment Option Box: Balandligi moslashuvchan qilindi (h-fit) ichidagi narsalar sig'ishi uchun -->
           <div
-            class="border-[#E4E7E9] border-[1px] w-[872px] h-[520px] rounded-[4px] mt-[40px] overflow-hidden"
+            class="border-[#E4E7E9] border-[1px] w-full h-fit rounded-[4px] mt-[40px] overflow-hidden bg-white shadow-sm"
           >
             <h2
               data-aos="fade-right"
               data-aos-duration="2500"
-              class="text-[18px] font-[500] pl-[32px] py-[20px]"
+              class="text-[18px] font-[500] px-[24px] md:pl-[32px] py-[20px]"
             >
               Payment Option
             </h2>
@@ -744,344 +815,549 @@
               data-aos-duration="2500"
               class="text-[#E4E7E9]"
             />
+
+            <!-- To'lov turlari gridi: Telefonda 2 tadan, planshetda 3 tadan, noutbukda 5 ta ustun -->
             <div
-              class="py-[24px] overflow-hidden px-[24px] flex justify-between items-center"
+              class="py-[24px] px-[16px] md:px-[24px] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[16px] items-center"
             >
               <!-- c-1 -->
               <div
                 data-aos="fade-right"
                 data-aos-duration="2500"
-                class="flex justify-center items-center flex-col"
+                class="flex justify-between h-[110px] items-center flex-col p-2 border border-gray-50 rounded hover:border-orange-300 transition"
               >
-                <img src="../images/CurrencyDollar.svg" alt="" class="" />
-                <p class="font-[500] text-center pt-[8px] pb-[16px]">
+                <img
+                  src="../images/CurrencyDollar.svg"
+                  alt="Cash"
+                  class="h-8 w-8 object-contain"
+                />
+                <p class="font-[500] text-xs md:text-sm text-center pt-[4px]">
                   Cash on Delivery
                 </p>
-                <input type="radio" class="text-[#FA8232]" name="radio" />
-              </div>
-              <!-- hr -->
-              <div data-aos="fade-up" data-aos-duration="2500" class="">
-                <img src="../images/Line 28.svg" alt="" />
+                <input
+                  type="radio"
+                  class="text-[#FA8232] cursor-pointer"
+                  name="radio"
+                />
               </div>
               <!-- c-2 -->
               <div
                 data-aos="fade-up"
                 data-aos-duration="2500"
-                class="flex justify-center items-center flex-col"
+                class="flex justify-between h-[110px] items-center flex-col p-2 border border-gray-50 rounded hover:border-orange-300 transition"
               >
-                <img src="../images/Icon 77.svg" alt="" class="" />
-                <p class="font-[500] text-center pt-[8px] pb-[16px]">Venmo</p>
-                <input type="radio" class="text-[#FA8232]" name="radio" />
-              </div>
-              <!-- hr -->
-              <div data-aos="fade-up" data-aos-duration="2500" class="">
-                <img src="../images/Line 28.svg" alt="" />
+                <img
+                  src="../images/Icon 77.svg"
+                  alt="Venmo"
+                  class="h-8 w-8 object-contain"
+                />
+                <p class="font-[500] text-xs md:text-sm text-center pt-[4px]">
+                  Venmo
+                </p>
+                <input
+                  type="radio"
+                  class="text-[#FA8232] cursor-pointer"
+                  name="radio"
+                />
               </div>
               <!-- c-3 -->
               <div
                 data-aos="fade-up"
                 data-aos-duration="2500"
-                class="flex justify-center items-center flex-col"
+                class="flex justify-between h-[110px] items-center flex-col p-2 border border-gray-50 rounded hover:border-orange-300 transition"
               >
-                <img src="../images/image 99.svg" alt="" class="" />
-                <p class="font-[500] text-center pt-[8px] pb-[16px]">Paypal</p>
-                <input type="radio" class="text-[#FA8232]" name="radio" />
-              </div>
-              <!-- hr -->
-              <div data-aos="fade-up" data-aos-duration="2500" class="">
-                <img src="../images/Line 28.svg" alt="" />
+                <img
+                  src="../images/image 99.svg"
+                  alt="Paypal"
+                  class="h-8 w-8 object-contain"
+                />
+                <p class="font-[500] text-xs md:text-sm text-center pt-[4px]">
+                  Paypal
+                </p>
+                <input
+                  type="radio"
+                  class="text-[#FA8232] cursor-pointer"
+                  name="radio"
+                />
               </div>
               <!-- c-4 -->
               <div
                 data-aos="fade-up"
                 data-aos-duration="2500"
-                class="flex justify-center items-center flex-col"
+                class="flex justify-between h-[110px] items-center flex-col p-2 border border-gray-50 rounded hover:border-orange-300 transition"
               >
-                <img src="../images/amazon-icon-1 1.svg" alt="" class="" />
-                <p class="font-[500] text-center pt-[8px] pb-[16px]">
+                <img
+                  src="../images/amazon-icon-1 1.svg"
+                  alt="Amazon"
+                  class="h-8 w-8 object-contain"
+                />
+                <p class="font-[500] text-xs md:text-sm text-center pt-[4px]">
                   Amazon Pay
                 </p>
-                <input type="radio" class="text-[#FA8232]" name="radio" />
-              </div>
-              <!-- hr -->
-              <div data-aos="fade-up" data-aos-duration="2500" class="">
-                <img src="../images/Line 28.svg" alt="" />
+                <input
+                  type="radio"
+                  class="text-[#FA8232] cursor-pointer"
+                  name="radio"
+                />
               </div>
               <!-- c-5 -->
               <div
                 data-aos="fade-left"
                 data-aos-duration="2500"
-                class="flex justify-center items-center flex-col"
+                class="flex justify-between h-[110px] items-center flex-col p-2 border border-gray-50 rounded hover:border-orange-300 transition col-span-2 sm:col-span-1"
               >
-                <img src="../images/CreditCard4.svg" alt="" class="" />
-                <p class="font-[500] text-center pt-[8px] pb-[16px]">
-                  Debid/Credit Card
+                <img
+                  src="../images/CreditCard4.svg"
+                  alt="Card"
+                  class="h-8 w-8 object-contain"
+                />
+                <p class="font-[500] text-xs md:text-sm text-center pt-[4px]">
+                  Card
                 </p>
-                <input type="radio" class="text-[#FA8232]" name="radio" />
+                <input
+                  type="radio"
+                  class="text-[#FA8232] cursor-pointer"
+                  name="radio"
+                />
               </div>
-
-              <!-- ... -->
             </div>
+
             <hr
               data-aos="fade-right"
               data-aos-duration="2500"
               class="text-[#E4E7E9]"
             />
-            <form class="flex flex-col gap-[16px] px-[32px] py-[32px]">
-              <label class="flex flex-col gap-[8px]">
-                <p data-aos="fade-right" data-aos-duration="2500" class="">
+
+            <!-- Karta ma'lumotlari formasi: Inputlar 100% eniga moslashadi -->
+            <div
+              class="flex flex-col gap-[16px] px-[16px] md:px-[32px] py-[32px]"
+            >
+              <label class="flex flex-col gap-[8px] w-full">
+                <p
+                  data-aos="fade-right"
+                  data-aos-duration="2500"
+                  class="text-sm font-medium text-gray-700"
+                >
                   Name on Card
                 </p>
                 <input
                   data-aos="fade-right"
                   data-aos-duration="2500"
                   type="text"
-                  class="w-[808px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                  class="w-full h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                 />
               </label>
-              <label class="flex flex-col gap-[8px]">
-                <p data-aos="fade-right" data-aos-duration="2500" class="">
+              <label class="flex flex-col gap-[8px] w-full">
+                <p
+                  data-aos="fade-right"
+                  data-aos-duration="2500"
+                  class="text-sm font-medium text-gray-700"
+                >
                   Card Number
                 </p>
                 <input
                   data-aos="fade-right"
                   data-aos-duration="2500"
                   type="text"
-                  class="w-[808px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                  class="w-full h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                 />
               </label>
-              <div class="flex gap-[16px]">
-                <label class="flex flex-col gap-[8px]">
-                  <p data-aos="fade-right" data-aos-duration="2500" class="">
+              <div class="flex flex-col sm:flex-row gap-[16px]">
+                <label class="flex flex-col gap-[8px] w-full sm:w-1/2">
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="2500"
+                    class="text-sm font-medium text-gray-700"
+                  >
                     Expire Date
                   </p>
                   <input
                     data-aos="fade-right"
                     data-aos-duration="2500"
                     type="date"
-                    class="w-[396px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                    class="w-full h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                   />
                 </label>
-                <label class="flex flex-col gap-[8px]">
-                  <p data-aos="fade-right" data-aos-duration="2500" class="">
+                <label class="flex flex-col gap-[8px] w-full sm:w-1/2">
+                  <p
+                    data-aos="fade-right"
+                    data-aos-duration="2500"
+                    class="text-sm font-medium text-gray-700"
+                  >
                     CVC
                   </p>
                   <input
                     data-aos="fade-right"
                     data-aos-duration="2500"
                     type="text"
-                    class="w-[396px] h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px]"
+                    class="w-full h-[44px] border-[1px] border-[#E4E7E9] rounded-[2px] px-3 focus:outline-none focus:border-orange-500"
                   />
                 </label>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-        <!-- right -->
+
+        <!-- right: Order Summary (Telefonda pastga tushadi, noutbukda o'ngda qotib turadi) -->
         <div
-        
-          class="border-[1px] overflow-hidden rounded-[4px] w-[424px] h-[450px] border-[#E4E7E9] px-[24px]"
+          class="border-[1px] overflow-hidden rounded-[4px] w-full lg:w-[424px] h-fit border-[#E4E7E9] px-[16px] md:px-[24px] pb-[24px] bg-white shadow-sm lg:sticky lg:top-[20px]"
         >
-          <h2 data-aos="fade-right" data-aos-duration="2500" class="py-[20px] text-[18px] font-[500]">Order Summery</h2>
-          <div  class="flex items-center gap-[16px]">
-            <img data-aos="fade-right" data-aos-duration="2500" src="../images/06.svg" alt="" class="w-[64px] h-[64px]" />
-            <p data-aos="fade-right" data-aos-duration="2500" class="flex flex-col">
-              <span class="">4K UHD LED Smart TV with... </span>
-              <span class="text-[#2DA5F3]">
-                <span class="text-[#5F6C72]">1x</span>
-                $1699
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            class="py-[20px] text-[18px] font-[500]"
+          >
+            Order Summary
+          </h2>
+
+          <div class="flex items-center gap-[16px]">
+            <img
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              src="../images/06.svg"
+              alt="Product"
+              class="w-[64px] h-[64px] object-cover rounded"
+            />
+            <p
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="flex flex-col text-sm md:text-base"
+            >
+              <span
+                class="font-medium truncate max-w-[250px] sm:max-w-none lg:max-w-[280px]"
+                >4K UHD LED Smart TV with...</span
+              >
+              <span class="text-[#2DA5F3] font-medium">
+                <span class="text-[#5F6C72] font-normal">1x</span> $1699
               </span>
             </p>
           </div>
 
-          <p class="flex justify-between items-center pt-[24px]">
-            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Sub-total</span>
-            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">$1699</span>
-          </p>
-          <p class="flex justify-between items-center pt-[12px]">
-            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Shipping</span>
-            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">Free</span>
-          </p>
-          <p class="flex justify-between items-center pt-[12px]">
-            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Discount</span>
-            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">$24</span>
-          </p>
-          <p class="flex justify-between items-center pt-[12px] pb-[16px]">
-            <span data-aos="fade-right" data-aos-duration="2500" class="text-[#5F6C72] text-[14px] font-[400]">Tax</span>
-            <span data-aos="fade-left" data-aos-duration="2500" class="font-[500]">$61.99</span>
-          </p>
-          <hr  data-aos="fade-right" data-aos-duration="2500" class="text-[#E4E7E9]" />
+          <div class="space-y-3 pt-[24px] pb-[16px]">
+            <p class="flex justify-between items-center">
+              <span
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-[#5F6C72] text-[14px] font-[400]"
+                >Sub-total</span
+              >
+              <span
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="font-[500] text-gray-900"
+                >$1699</span
+              >
+            </p>
+            <p class="flex justify-between items-center">
+              <span
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-[#5F6C72] text-[14px] font-[400]"
+                >Shipping</span
+              >
+              <span
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="font-[500] text-green-600"
+                >Free</span
+              >
+            </p>
+            <p class="flex justify-between items-center">
+              <span
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-[#5F6C72] text-[14px] font-[400]"
+                >Discount</span
+              >
+              <span
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="font-[500] text-red-500"
+                >$24</span
+              >
+            </p>
+            <p class="flex justify-between items-center">
+              <span
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="text-[#5F6C72] text-[14px] font-[400]"
+                >Tax</span
+              >
+              <span
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="font-[500] text-gray-900"
+                >$61.99</span
+              >
+            </p>
+          </div>
+
+          <hr
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            class="text-[#E4E7E9]"
+          />
+
           <p class="pt-[16px] flex justify-between items-center">
-            <span data-aos="fade-right" data-aos-duration="2500" class="text-[16px] font-[400]">Total</span>
-            <span data-aos="fade-left" data-aos-duration="2500" class="text-[16px] font-[600]">1,784.99</span>
-          </p>
-          <a href="./succes.html">
-            <button
-            data-aos="fade-right" data-aos-duration="2500"
-              class="w-[376px] h-[56px] bg-[#FA8232] text-white font-[700] text-[16px] mt-[24px]"
+            <span
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="text-[16px] font-[400]"
+              >Total</span
             >
-              Place order ->
+            <span
+              data-aos="fade-left"
+              data-aos-duration="2500"
+              class="text-[16px] font-[600] text-gray-900"
+              >$1,784.99</span
+            >
+          </p>
+
+          <a href="./succes.html" class="block w-full">
+            <button
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="w-full h-[56px] bg-[#FA8232] hover:bg-orange-600 active:scale-[0.99] text-white font-[700] text-[16px] mt-[24px] rounded-[4px] transition-all flex items-center justify-center gap-2"
+            >
+              Place order &rarr;
             </button>
           </a>
         </div>
-        <!-- ......... -->
       </section>
     </main>
-    <footer class="bg-[#191C1F] h-100%">
+    <footer class="bg-[#191C1F]">
       <!-- top -->
       <div
         class="px-[20px] max-w-[1360px] w-full mx-auto grid grid-cols-5 gap-[24px] py-[72px] max-[1086px]:grid-cols-4 max-[760px]:grid-cols-3 max-[580px]:grid-cols-2 max-[392px]:grid-cols-1"
       >
-        <!-- c-1 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <img src="../images/Logo (1).svg" alt="" />
-          <p class="flex flex-col text-[#77878F] pt-[24px]">
-            Customer Supports:
+        <!-- c-1: Kontakt ma'lumotlari -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="flex flex-col gap-[12px]"
+        >
+          <img src="../images/Logo (1).svg" alt="Kinbo Logo" class="w-max" />
+          <p class="flex flex-col text-[#77878F] pt-[12px]">
+            Customer Support:
             <span class="text-white text-[18px] font-[500]"
               >(629) 555-0129</span
             >
           </p>
-          <p class="text-[#ADB7BC] pt-[12px]">
+          <p class="text-[#ADB7BC]">
             4517 Washington Ave. <br />
             Manchester, Kentucky 39495
           </p>
-          <p class="text-white pt-[12px]">info@kinbo.com</p>
+          <p class="text-white font-[500]">info@kinbo.com</p>
         </div>
-        <!-- c-2 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <ul class="">
-            <li class="text-white font-[500] text-[16px]">Top Category</li>
-            <li class="pt-[12px] text-[#929FA5]">Computer & Laptop</li>
-            <li class="pt-[12px] text-[#929FA5]">SmartPhone</li>
-            <li class="pt-[12px] text-[#929FA5]">Headphone</li>
-            <li class="pt-[12px] flex gap-[8px] text-white items-center">
-              <span class=""><img src="./images/Devider.svg" alt="" /></span
-              >Accessories
+
+        <!-- c-2: Kategoriyalar -->
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <ul class="flex flex-col gap-[12px]">
+            <li class="text-white font-[500] text-[16px] mb-[4px]">
+              Top Category
             </li>
-            <li class="pt-[12px] text-[#929FA5]">Camera & Photo</li>
-            <li class="pt-[12px] text-[#929FA5]">TV & Homes</li>
-            <li class="pt-[12px] text-[#EBC80C]">Browse All Product -></li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Computer & Laptop</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >SmartPhone</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Headphone</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-[8px] text-white items-center hover:opacity-90 transition"
+              >
+                <img src="../images/Devider.svg" alt="" />
+                Accessories
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Camera & Photo</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >TV & Homes</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#EBC80C] hover:underline transition"
+                >Browse All Product →</a
+              >
+            </li>
           </ul>
         </div>
-        <!-- c-3 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <ul class="">
-            <li class="text-white font-[500] text-[16px]">Quick links</li>
-            <li class="pt-[12px] text-[#929FA5]">Shop Product</li>
-            <li class="pt-[12px] text-[#929FA5]">Shoping Cart</li>
-            <li class="pt-[12px] text-[#929FA5]">Wishlist</li>
-            <li class="pt-[12px] text-[#929FA5]">Compare</li>
-            <li class="pt-[12px] text-[#929FA5]">Track Order</li>
-            <li class="pt-[12px] text-[#929FA5]">Customer Help</li>
-            <li class="pt-[12px] text-[#929FA5]">About Us</li>
+
+        <!-- c-3: Foydali havolalar -->
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <ul class="flex flex-col gap-[12px]">
+            <li class="text-white font-[500] text-[16px] mb-[4px]">
+              Quick links
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Shop Product</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Shopping Cart</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Wishlist</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Compare</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Track Order</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Customer Help</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >About Us</a
+              >
+            </li>
           </ul>
         </div>
-        <!-- c-4 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <p class="text-white text-[16px] font-[500]">Download APp</p>
-          <button
-            class="bg-[#303639] w-[176px] mt-[18px] px-[20px] py-[18.5px] flex items-center gap-[16px]"
+
+        <!-- c-4: Ilovani yuklab olish -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="flex flex-col gap-[12px]"
+        >
+          <p class="text-white text-[16px] font-[500] mb-[6px]">Download App</p>
+
+          <a
+            href="#"
+            class="bg-[#303639] w-[176px] px-[20px] py-[14px] flex items-center gap-[16px] rounded-[4px] hover:bg-[#3d4549] transition"
           >
-            <img src="../images/gogle play.svg" alt="" />
-            <p class="flex flex-col text-white">
+            <img src="../images/gogle play.svg" alt="Google Play" />
+            <span class="flex flex-col text-white text-[12px]">
               Get it now
-              <span class="">Google Play</span>
-            </p>
-          </button>
-          <button
-            class="bg-[#303639] w-[176px] mt-[18px] px-[22.67px] py-[18.5px] flex items-center gap-[16px]"
+              <span class="text-[14px] font-[500]">Google Play</span>
+            </span>
+          </a>
+
+          <a
+            href="#"
+            class="bg-[#303639] w-[176px] px-[20px] py-[14px] flex items-center gap-[16px] rounded-[4px] hover:bg-[#3d4549] transition"
           >
-            <img src="../images/App Store.svg" alt="" />
-            <p class="flex flex-col text-white">
+            <img src="../images/App Store.svg" alt="App Store" />
+            <span class="flex flex-col text-white text-[12px]">
               Get it now
-              <span class="">App Store</span>
-            </p>
-          </button>
+              <span class="text-[14px] font-[500]">App Store</span>
+            </span>
+          </a>
         </div>
-        <!-- c-5 -->
+
+        <!-- c-5: Mashhur teglar -->
         <div
           data-aos="fade-up"
           data-aos-duration="2500"
           class="max-[580px]:hidden"
         >
-          <p class="text-white text-[16px] font-[500]">Popular Tag</p>
-          <div class="pt-[18px] w-[312px] h-[152px]">
+          <p class="text-white text-[16px] font-[500] mb-[18px]">Popular Tag</p>
+          <div class="flex flex-wrap gap-[8px] max-w-[320px]">
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Game
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               iPhone
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               TV
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Asus Laptops
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Macbook
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               SSD
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Graphics Card
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Power Bank
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Smart TV
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Speaker
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Tablet
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Microwave
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Samsung
             </button>
           </div>
         </div>
-        <!-- .. -->
       </div>
-      <hr class="text-[#191C1F]" />
+
+      <hr class="border-[#303639]" />
+
       <!-- bottom -->
-      <p class="text-[#ADB7BC] py-[24px] text-center">
+      <p class="text-[#ADB7BC] py-[24px] text-center text-[14px]">
         Kinbo - eCommerce Template © 2021. Design by Templatecookie
       </p>
     </footer>
-    <script src="https://cdn.jotfor.ms/agent/embedjs/019dbee35ada74008c45343adab1b35d0eb0/embed.js?isVoice=1"></script>
+    <!-- <script src="https://cdn.jotfor.ms/agent/embedjs/019dbee35ada74008c45343adab1b35d0eb0/embed.js?isVoice=1"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

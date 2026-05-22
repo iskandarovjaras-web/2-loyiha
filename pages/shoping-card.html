@@ -550,389 +550,377 @@
 
     <main>
       <section
-        data-aos="fade-right"
-        data-aos-duration="2500"
-        class="pt-[246px] bg-[#F2F4F5] max-[1040px]:pt-[66px]"
-      >
-        <div
-          class="px-[20px] max-w-[1360px] w-full mx-auto py-[26px] flex items-center gap-[8px]"
-        >
-          <img src="../images/Vector.svg" alt="" />
-          <a href="../index.html"><p class="text-[#5F6C72]">Home</p></a>
-          <p class="text-[#5F6C72]">></p>
-          <a href="./shop-page.html"><p class="text-[#5F6C72]">Shop-Page</p></a>
-          <p class="text-[#5F6C72]">></p>
-          <a href="./produkt-details.html">
-            <p class="text-[#5F6C72]">Produkt-details</p>
-          </a>
-          <p class="text-[#5F6C72]">></p>
+  data-aos="fade-right"
+  data-aos-duration="2500"
+  class="pt-[246px] bg-[#F2F4F5] max-[1040px]:pt-[66px]"
+>
+  <nav
+    aria-label="Breadcrumb"
+    class="px-[20px] max-w-[1360px] w-full mx-auto py-[26px] flex items-center flex-wrap gap-[8px] text-[14px]"
+  >
+    <!-- Home ikonkasi -->
+    <img src="../images/Vector.svg" alt="Home" class="w-auto h-[14px]" />
+    
+    <a href="../index.html" class="text-[#5F6C72] hover:text-[#2DA5F3] transition">Home</a>
+    <span class="text-[#5F6C72] font-light">&gt;</span>
 
-          <p class="text-[#2DA5F3]">Shopping Card</p>
+    <a href="./shop-page.html" class="text-[#5F6C72] hover:text-[#2DA5F3] transition">Shop Page</a>
+    <span class="text-[#5F6C72] font-light">&gt;</span>
+
+    <a href="./produkt-details.html" class="text-[#5F6C72] hover:text-[#2DA5F3] transition">Product Details</a>
+    <span class="text-[#5F6C72] font-light">&gt;</span>
+
+    <!-- Hozirgi faol sahifa (bosilmaydi) -->
+    <span class="text-[#2DA5F3] font-[500]">Shopping Cart</span>
+  </nav>
+</section>
+      <section class="px-[20px] max-w-[1360px] w-full mx-auto pt-[72px] pb-[80px] flex justify-between gap-[30px] lg:flex-row flex-col overflow-hidden">
+  <!-- Left: Shopping Cart List -->
+  <div data-aos="fade-right" data-aos-duration="2500" class="border-[1px] border-[#E4E7E9] rounded-[4px] flex-1 w-full h-full overflow-hidden">
+    <p class="py-[20px] pl-[24px] font-[600] text-[18px]">Shopping Cart</p>
+    
+    <!-- Table Header (Hidden on small mobile screens for better UX) -->
+    <div class="bg-[#F2F4F5] w-full hidden md:block">
+      <div class="px-[24px] py-[10px] grid grid-cols-12 gap-[10px]">
+        <p class="font-[500] text-[12px] text-[#475156] col-span-6">Products</p>
+        <p class="font-[500] text-[12px] text-[#475156] col-span-2 text-center">Price</p>
+        <p class="font-[500] text-[12px] text-[#475156] col-span-2 text-center">Quantity</p>
+        <p class="font-[500] text-[12px] text-[#475156] col-span-2 text-right">Sub-Total</p>
+      </div>
+    </div>
+
+    <!-- Product Item Row -->
+    <div class="px-[24px] py-[24px] grid grid-cols-12 gap-[20px] items-center border-b-[1px] border-[#E4E7E9] md:flex-row flex-col">
+      <!-- Image & Title -->
+      <div class="flex items-center gap-[12px] col-span-12 md:col-span-6">
+        <button class="cursor-pointer shrink-0">
+          <img src="../images/XCircle.svg" alt="Remove" />
+        </button>
+        <img src="../images/06.svg" alt="Product" class="w-[72px] h-[72px] object-contain shrink-0" />
+        <p class="text-[14px] font-[500] text-[#191C1F]">
+          4K UHD LED Smart TV with <br class="hidden sm:inline" />
+          Chromecast Built-in
+        </p>
+      </div>
+      
+      <!-- Price -->
+      <div class="col-span-4 md:col-span-2 text-left md:text-center">
+        <span class="block text-[12px] text-[#475156] md:hidden font-medium">Price:</span>
+        <del class="text-[#929FA5] text-[14px] font-[400] mr-[4px]">$1999.00</del>
+        <span class="text-[#191C1F] font-[500]">$1699</span>
+      </div>
+      
+      <!-- Quantity Buttons -->
+      <div class="col-span-4 md:col-span-2 flex justify-start md:justify-center">
+        <div class="card-btn border-[2px] border-[#E4E7E9] rounded-[3px] w-[120px] h-[40px] flex items-center justify-between px-[12px]">
+          <button class="minus text-[24px] cursor-pointer text-[#475156]">-</button>
+          <span class="soni text-[16px] font-[600]">1</span>
+          <button class="plus text-[18px] cursor-pointer text-[#475156]">+</button>
         </div>
-      </section>
-      <section
-        class="px-[20px] max-w-[1360px] w-full mx-auto pt-[72px] flex justify-between pb-[80px]"
-      >
-        <!-- left -->
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2500"
-          class="border-[1px] border-[#E4E7E9] rounded-[4px] w-[872px] h-[314px] overflow-hidden"
-        >
-          <p
-            data-aos="fade-right"
-            data-aos-duration="2500"
-            class="py-[20px] pl-[24px]"
-          >
-            Shopping Card
-          </p>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="2500"
-            class="bg-[#F2F4F5] w-full h-[38px]"
-          >
-            <div class="px-[24px] py-[10px] flex">
-              <p class="font-[500] text-[12px] text-[#475156]">Products</p>
-              <p class="font-[500] text-[12px] text-[#475156] pl-[320px]">
-                Price
-              </p>
-              <p class="font-[500] text-[12px] text-[#475156] pl-[125px]">
-                Quantity
-              </p>
-              <p class="font-[500] text-[12px] text-[#475156] pl-[146px]">
-                Sub-Total
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="2500"
-            class="px-[24px] py-[24px] flex items-center"
-          >
-            <div class="gap-[12px] flex items-center">
-              <img src="../images/XCircle.svg" alt="" />
-              <img src="../images/06.svg" alt="" class="w-[72px] h-[72px]" />
-              <p>
-                4K UHD LED Smart TV with <br />
-                Chromecast Built-in
-              </p>
-            </div>
-            <p class="pl-[60px]">
-              <del class="text-[#929FA5] text-[14px] font-[400]">$1999.00</del>
-              <span class="">$1699</span>
-            </p>
-            <div class="card-btn border-[2px] border-[#E4E7E9] rounded-[3px] w-[148px] h-[48px] flex items-center justify-center gap-[37.5px] ml-[44px]">
-                <button class="minus  text-[30px] cursor-pointer">-</button>
-                <span class="soni text-[20px]">1</span>
-                <button class="plus text-[20px] cursor-pointer">+</button>
-            </div>
-            <p class="pl-[24px]">$1699</p>
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="2500"
-            class="border-t-[1px] border-[#E4E7E9] px-[24px] py-[24px] flex justify-between"
-          >
-            <a href="./shop-page.html">
-              <button
-                class="border-[2px] border-[#2DA5F3] w-[203px] h-[48px] text-[#2DA5F3] cursor-pointer"
-              >
-                <- Return to Shop
-              </button>
-            </a>
-            <a href="./produkt-details.html">
-              <button
-                class="w-[147px] h-[48px] border-[2px] border-[#2DA5F3] text-[#2DA5F3] cursor-pointer"
-              >
-                Update cart
-              </button>
-            </a>
-          </div>
-        </div>
-        <!-- right -->
-        <div class="flex flex-col gap-[24px]">
-          <!-- top -->
-          <div
-            data-aos="fade-left"
-            data-aos-duration="2500"
-            class="border-[1px] border-[#E4E7E9] rounded-[4px] w-[424px] h-[366px] py-[24px] px-[24px] overflow-hidden"
-          >
-            <p
-              data-aos="fade-right"
-              data-aos-duration="2500"
-              class="text-[18px] font-[500]"
-            >
-              Card Totals
-            </p>
-            <p class="flex justify-between items-center pt-[20px]">
-              <span
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                class="text-[#5F6C72] text-[14px] font-[400]"
-                >Sub-total</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos-duration="2500"
-                class="font-[500]"
-                >$1699</span
-              >
-            </p>
-            <p class="flex justify-between items-center pt-[12px]">
-              <span
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                class="text-[#5F6C72] text-[14px] font-[400]"
-                >Shipping</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos-duration="2500"
-                class="font-[500]"
-                >Free</span
-              >
-            </p>
-            <p class="flex justify-between items-center pt-[12px]">
-              <span
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                class="text-[#5F6C72] text-[14px] font-[400]"
-                >Discount</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos-duration="2500"
-                class="font-[500]"
-                >$24</span
-              >
-            </p>
-            <p class="flex justify-between items-center pt-[12px] pb-[16px]">
-              <span
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                class="text-[#5F6C72] text-[14px] font-[400]"
-                >Tax</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos-duration="2500"
-                class="font-[500]"
-                >$61.99</span
-              >
-            </p>
-            <hr class="text-[#E4E7E9]" />
-            <p class="pt-[16px] flex justify-between items-center">
-              <span
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                class="text-[16px] font-[400]"
-                >Total</span
-              >
-              <span
-                data-aos="fade-left"
-                data-aos-duration="2500"
-                class="text-[16px] font-[600]"
-                >1,784.99</span
-              >
-            </p>
-            <a href="./checkout.html"><button
-              data-aos="fade-right"
-              data-aos-duration="2500"
-              class="w-full cursor-pointer h-[56px] text-center bg-[#FA8232] text-white text-[16px] font-[700] mt-[24px]"
-            >
-              Proceed to Checkout ->
-            </button></a>
-          </div>
-          <!-- bottom -->
-          <div
-            data-aos="fade-left"
-            data-aos-duration="2500"
-            class="w-[424px] h-[220px] border-[1px] border-[#E4E7E9] rounded-[4px] overflow-hidden"
-          >
-            <p
-              data-aos="fade-right"
-              data-aos-duration="2500"
-              class="py-[20px] pl-[24px] text-[18px] font-[500]"
-            >
-              Coupon Code
-            </p>
-            <hr class="text-[#E4E7E9]" />
-            <form
-              action=""
-              class="py-[24px] px-[24px] flex flex-col gap-[16px]"
-            >
-              <input
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                type="email"
-                class="w-full h-[44px] border-[#E4E7E9] border-[1px]"
-                placeholder="Email address"
-              />
-              <button
-                data-aos="fade-right"
-                data-aos-duration="2500"
-                class="cursor-pointer w-[159px] h-[48px] bg-[#2DA5F3] text-white text-center font-[700] text-[14px]"
-              >
-                Apply Coupon
-              </button>
-            </form>
-          </div>
-          <!-- ... -->
-        </div>
-        <!-- ... -->
-      </section>
+      </div>
+      
+      <!-- Subtotal -->
+      <div class="col-span-4 md:col-span-2 text-right">
+        <span class="block text-[12px] text-[#475156] md:hidden font-medium">Subtotal:</span>
+        <span class="text-[#191C1F] font-[600]">$1699</span>
+      </div>
+    </div>
+
+    <!-- Bottom Buttons -->
+    <div class="px-[24px] py-[24px] flex justify-between items-center sm:flex-row flex-col gap-[12px]">
+      <a href="./shop-page.html" class="w-full sm:w-auto">
+        <button class="border-[2px] border-[#2DA5F3] w-full sm:w-[203px] h-[48px] text-[#2DA5F3] font-[700] text-[14px] cursor-pointer hover:bg-[#2DA5F3] hover:text-white transition-all">
+          ← Return to Shop
+        </button>
+      </a>
+      <a href="./produkt-details.html" class="w-full sm:w-auto">
+        <button class="w-full sm:w-[147px] h-[48px] border-[2px] border-[#2DA5F3] text-[#2DA5F3] font-[700] text-[14px] cursor-pointer hover:bg-[#2DA5F3] hover:text-white transition-all">
+          Update cart
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Right: Totals & Coupon -->
+  <div class="flex flex-col gap-[24px] w-full lg:w-[424px] shrink-0">
+    <!-- Card Totals -->
+    <div data-aos="fade-left" data-aos-duration="2500" class="border-[1px] border-[#E4E7E9] rounded-[4px] py-[24px] px-[24px]">
+      <p class="text-[18px] font-[500] text-[#191C1F] pb-[4px]">Card Totals</p>
+      
+      <div class="flex justify-between items-center pt-[16px]">
+        <span class="text-[#5F6C72] text-[14px]">Sub-total</span>
+        <span class="font-[500] text-[#191C1F]">$1699</span>
+      </div>
+      <div class="flex justify-between items-center pt-[12px]">
+        <span class="text-[#5F6C72] text-[14px]">Shipping</span>
+        <span class="font-[500] text-[#2DB224]">Free</span>
+      </div>
+      <div class="flex justify-between items-center pt-[12px]">
+        <span class="text-[#5F6C72] text-[14px]">Discount</span>
+        <span class="font-[500] text-[#191C1F]">$24</span>
+      </div>
+      <div class="flex justify-between items-center pt-[12px] pb-[16px]">
+        <span class="text-[#5F6C72] text-[14px]">Tax</span>
+        <span class="font-[500] text-[#191C1F]">$61.99</span>
+      </div>
+      
+      <hr class="border-[#E4E7E9]" />
+      
+      <div class="pt-[16px] flex justify-between items-center">
+        <span class="text-[16px] font-[400] text-[#191C1F]">Total</span>
+        <span class="text-[18px] font-[600] text-[#191C1F]">$1,784.99</span>
+      </div>
+      
+      <a href="./checkout.html" class="block mt-[24px]">
+        <button class="w-full cursor-pointer h-[56px] text-center bg-[#FA8232] text-white text-[16px] font-[700] rounded-[4px] hover:bg-[#e07025] transition-all flex items-center justify-center gap-[8px]">
+          Proceed to Checkout →
+        </button>
+      </a>
+    </div>
+
+    <!-- Coupon Code -->
+    <div data-aos="fade-left" data-aos-duration="2500" class="border-[1px] border-[#E4E7E9] rounded-[4px] overflow-hidden">
+      <p class="py-[20px] pl-[24px] text-[18px] font-[500] text-[#191C1F]">Coupon Code</p>
+      <hr class="border-[#E4E7E9]" />
+      <form action="" class="py-[24px] px-[24px] flex flex-col gap-[16px]">
+        <input type="text" class="w-full h-[44px] border-[#E4E7E9] border-[1px] px-[16px] rounded-[4px] outline-none focus:border-[#2DA5F3]" placeholder="Coupon code" />
+        <button class="cursor-pointer w-[159px] h-[48px] bg-[#2DA5F3] text-white text-center font-[700] text-[14px] rounded-[4px] hover:bg-[#1d94e2] transition-all">
+          Apply Coupon
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
     </main>
-    <footer class="bg-[#191C1F] h-100%">
+   <footer class="bg-[#191C1F]">
       <!-- top -->
       <div
         class="px-[20px] max-w-[1360px] w-full mx-auto grid grid-cols-5 gap-[24px] py-[72px] max-[1086px]:grid-cols-4 max-[760px]:grid-cols-3 max-[580px]:grid-cols-2 max-[392px]:grid-cols-1"
       >
-        <!-- c-1 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <img src="../images/Logo (1).svg" alt="" />
-          <p class="flex flex-col text-[#77878F] pt-[24px]">
-            Customer Supports:
+        <!-- c-1: Kontakt ma'lumotlari -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="flex flex-col gap-[12px]"
+        >
+          <img src="../images/Logo (1).svg" alt="Kinbo Logo" class="w-max" />
+          <p class="flex flex-col text-[#77878F] pt-[12px]">
+            Customer Support:
             <span class="text-white text-[18px] font-[500]"
               >(629) 555-0129</span
             >
           </p>
-          <p class="text-[#ADB7BC] pt-[12px]">
+          <p class="text-[#ADB7BC]">
             4517 Washington Ave. <br />
             Manchester, Kentucky 39495
           </p>
-          <p class="text-white pt-[12px]">info@kinbo.com</p>
+          <p class="text-white font-[500]">info@kinbo.com</p>
         </div>
-        <!-- c-2 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <ul class="">
-            <li class="text-white font-[500] text-[16px]">Top Category</li>
-            <li class="pt-[12px] text-[#929FA5]">Computer & Laptop</li>
-            <li class="pt-[12px] text-[#929FA5]">SmartPhone</li>
-            <li class="pt-[12px] text-[#929FA5]">Headphone</li>
-            <li class="pt-[12px] flex gap-[8px] text-white items-center">
-              <span class=""><img src="./images/Devider.svg" alt="" /></span
-              >Accessories
+
+        <!-- c-2: Kategoriyalar -->
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <ul class="flex flex-col gap-[12px]">
+            <li class="text-white font-[500] text-[16px] mb-[4px]">
+              Top Category
             </li>
-            <li class="pt-[12px] text-[#929FA5]">Camera & Photo</li>
-            <li class="pt-[12px] text-[#929FA5]">TV & Homes</li>
-            <li class="pt-[12px] text-[#EBC80C]">Browse All Product -></li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Computer & Laptop</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >SmartPhone</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Headphone</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-[8px] text-white items-center hover:opacity-90 transition"
+              >
+                <img src="../images/Devider.svg" alt="" />
+                Accessories
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Camera & Photo</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >TV & Homes</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#EBC80C] hover:underline transition"
+                >Browse All Product →</a
+              >
+            </li>
           </ul>
         </div>
-        <!-- c-3 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <ul class="">
-            <li class="text-white font-[500] text-[16px]">Quick links</li>
-            <li class="pt-[12px] text-[#929FA5]">Shop Product</li>
-            <li class="pt-[12px] text-[#929FA5]">Shoping Cart</li>
-            <li class="pt-[12px] text-[#929FA5]">Wishlist</li>
-            <li class="pt-[12px] text-[#929FA5]">Compare</li>
-            <li class="pt-[12px] text-[#929FA5]">Track Order</li>
-            <li class="pt-[12px] text-[#929FA5]">Customer Help</li>
-            <li class="pt-[12px] text-[#929FA5]">About Us</li>
+
+        <!-- c-3: Foydali havolalar -->
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <ul class="flex flex-col gap-[12px]">
+            <li class="text-white font-[500] text-[16px] mb-[4px]">
+              Quick links
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Shop Product</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Shopping Cart</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Wishlist</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Compare</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Track Order</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >Customer Help</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#929FA5] hover:text-white transition"
+                >About Us</a
+              >
+            </li>
           </ul>
         </div>
-        <!-- c-4 -->
-        <div data-aos="fade-up" data-aos-duration="2500" class="">
-          <p class="text-white text-[16px] font-[500]">Download APp</p>
-          <button
-            class="bg-[#303639] w-[176px] mt-[18px] px-[20px] py-[18.5px] flex items-center gap-[16px]"
+
+        <!-- c-4: Ilovani yuklab olish -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="flex flex-col gap-[12px]"
+        >
+          <p class="text-white text-[16px] font-[500] mb-[6px]">Download App</p>
+
+          <a
+            href="#"
+            class="bg-[#303639] w-[176px] px-[20px] py-[14px] flex items-center gap-[16px] rounded-[4px] hover:bg-[#3d4549] transition"
           >
-            <img src="../images/gogle play.svg" alt="" />
-            <p class="flex flex-col text-white">
+            <img src="../images/gogle play.svg" alt="Google Play" />
+            <span class="flex flex-col text-white text-[12px]">
               Get it now
-              <span class="">Google Play</span>
-            </p>
-          </button>
-          <button
-            class="bg-[#303639] w-[176px] mt-[18px] px-[22.67px] py-[18.5px] flex items-center gap-[16px]"
+              <span class="text-[14px] font-[500]">Google Play</span>
+            </span>
+          </a>
+
+          <a
+            href="#"
+            class="bg-[#303639] w-[176px] px-[20px] py-[14px] flex items-center gap-[16px] rounded-[4px] hover:bg-[#3d4549] transition"
           >
-            <img src="../images/App Store.svg" alt="" />
-            <p class="flex flex-col text-white">
+            <img src="../images/App Store.svg" alt="App Store" />
+            <span class="flex flex-col text-white text-[12px]">
               Get it now
-              <span class="">App Store</span>
-            </p>
-          </button>
+              <span class="text-[14px] font-[500]">App Store</span>
+            </span>
+          </a>
         </div>
-        <!-- c-5 -->
+
+        <!-- c-5: Mashhur teglar -->
         <div
           data-aos="fade-up"
           data-aos-duration="2500"
           class="max-[580px]:hidden"
         >
-          <p class="text-white text-[16px] font-[500]">Popular Tag</p>
-          <div class="pt-[18px] w-[312px] h-[152px]">
+          <p class="text-white text-[16px] font-[500] mb-[18px]">Popular Tag</p>
+          <div class="flex flex-wrap gap-[8px] max-w-[320px]">
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Game
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               iPhone
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               TV
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Asus Laptops
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Macbook
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               SSD
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Graphics Card
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Power Bank
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] my-[8px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Smart TV
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Speaker
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Tablet
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Microwave
             </button>
             <button
-              class="text-white border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px]"
+              class="text-white text-[14px] border-[1px] rounded-[2px] border-[#303639] py-[6px] px-[12px] hover:bg-[#303639] hover:border-white transition"
             >
               Samsung
             </button>
           </div>
         </div>
-        <!-- .. -->
       </div>
-      <hr class="text-[#191C1F]" />
+
+      <hr class="border-[#303639]" />
+
       <!-- bottom -->
-      <p class="text-[#ADB7BC] py-[24px] text-center">
+      <p class="text-[#ADB7BC] py-[24px] text-center text-[14px]">
         Kinbo - eCommerce Template © 2021. Design by Templatecookie
       </p>
     </footer>
