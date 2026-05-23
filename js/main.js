@@ -11,3 +11,9 @@ plus.addEventListener("click",  function() {
 minus.addEventListener("click",  function() {
     soni.textContent--
 });
+var loading = document.querySelector(".loading");
+
+
+window.addEventListener("load", function () {
+    loading.classList.add("hidden");
+});
