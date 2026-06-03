@@ -3,7 +3,7 @@ var cartBtn = document.querySelector(".cart-btn");
 var minus = document.querySelector(".minus");
 var soni = document.querySelector(".soni");
 var plus = document.querySelector(".plus");
-
+var loading = document.querySelector(".loading")
 
 plus.addEventListener("click",  function() {
     soni.textContent++
